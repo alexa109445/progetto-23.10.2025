@@ -1,11 +1,84 @@
-.container{
+body {
+    background-color: #555;
+    font-family: 'Indie Flower', cursive;
+    color: #333;
+    margin: 0;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 80%;
+    align-items: center;
+    min-height: 100vh;
 }
-div{
+
+.container {
     display: flex;
-    align-items: flex-end;
-   margin: 1px solid blue; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+    padding: 20px 0;
+}
+
+.container div {
+    width: 180px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1.2em;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.container div {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.container div:nth-child(1) {
+    background-color: #fffac8; 
+    transform: rotate(-3deg);
+}
+
+.container div:nth-child(2) {
+    background-color: #c8ffc8; 
+    transform: rotate(2deg);
+}
+
+.container div:nth-child(3) {
+    background-color: #c8c8ff;
+    transform: rotate(-5deg);
+}
+
+.container div:nth-child(4) {
+    background-color: #c8ffff; 
+    transform: rotate(4deg);
+}
+
+.container div:nth-child(5) {
+    background-color: #fff890; 
+    transform: rotate(1deg);
+}
+
+.container div:nth-child(6) {
+    background-color: #9090ff; 
+    transform: rotate(-4deg);
+}
+
+.container div:nth-child(7) {
+    background-color: #ffc890;
+    transform: rotate(3deg);
+}
+
+.container div:nth-child(8) {
+    background-color: #90ff90;
+    transform: rotate(-2deg);
+}
+
+.container div:hover {
+    transform: scale(1.2) rotate(0deg) ; 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
